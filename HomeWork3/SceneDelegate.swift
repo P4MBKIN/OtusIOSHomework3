@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import OtusGithubAPI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -28,6 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
+            SearchAPI.searchReposGet(q: "tetris+language:assembly", order: Order.desc) { list, error in
+                print(list)
+                print(error)
+            }
         }
     }
 

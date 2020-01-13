@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		CE8609C523CCA97E008F4FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C423CCA97E008F4FEE /* Assets.xcassets */; };
 		CE8609C823CCA97E008F4FEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C723CCA97E008F4FEE /* Preview Assets.xcassets */; };
 		CE8609CB23CCA97E008F4FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C923CCA97E008F4FEE /* LaunchScreen.storyboard */; };
+		CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D623CCB70F008F4FEE /* OtusGithubAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = HomeWork3;
+			packageProductDependencies = (
+				CE8609D623CCB70F008F4FEE /* OtusGithubAPI */,
+			);
 			productName = HomeWork3;
 			productReference = CE8609BB23CCA97D008F4FEE /* HomeWork3.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = CE8609B223CCA97D008F4FEE;
+			packageReferences = (
+				CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */,
+			);
 			productRefGroup = CE8609BC23CCA97D008F4FEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/P4MBKIN/OtusGithubAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE8609D623CCB70F008F4FEE /* OtusGithubAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */;
+			productName = OtusGithubAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE8609B323CCA97D008F4FEE /* Project object */;
 }
