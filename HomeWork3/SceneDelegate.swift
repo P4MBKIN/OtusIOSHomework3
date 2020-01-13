@@ -9,6 +9,7 @@
 import UIKit
 import SwiftUI
 import OtusGithubAPI
+import OtusNewsAPI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,10 +30,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
-            SearchAPI.searchReposGet(q: "tetris+language:assembly", order: Order.desc) { list, error in
-                print(list)
-                print(error)
-            }
+//            SearchAPI.searchReposGet(q: "tetris+language:assembly", order: Order.desc) { list, error in
+//                print(list)
+//                print(error)
+//            }
+//            ArticlesAPI.everythingGet(q: "bitcoin", from: "2020-01-12", sortBy: "publishedAt", apiKey: "428cdc3ea75045248447b7f8c444d298") { list, error in
+//                print(list)
+//                print(error)
+//            }
         }
     }
 

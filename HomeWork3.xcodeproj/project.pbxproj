@@ -14,6 +14,7 @@
 		CE8609C823CCA97E008F4FEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C723CCA97E008F4FEE /* Preview Assets.xcassets */; };
 		CE8609CB23CCA97E008F4FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C923CCA97E008F4FEE /* LaunchScreen.storyboard */; };
 		CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D623CCB70F008F4FEE /* OtusGithubAPI */; };
+		CE8609DA23CCC7DE008F4FEE /* OtusNewsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */,
+				CE8609DA23CCC7DE008F4FEE /* OtusNewsAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 			name = HomeWork3;
 			packageProductDependencies = (
 				CE8609D623CCB70F008F4FEE /* OtusGithubAPI */,
+				CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */,
 			);
 			productName = HomeWork3;
 			productReference = CE8609BB23CCA97D008F4FEE /* HomeWork3.app */;
@@ -126,6 +129,7 @@
 			mainGroup = CE8609B223CCA97D008F4FEE;
 			packageReferences = (
 				CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */,
+				CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */,
 			);
 			productRefGroup = CE8609BC23CCA97D008F4FEE /* Products */;
 			projectDirPath = "";
@@ -358,6 +362,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/P4MBKIN/OtusNewsAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -365,6 +377,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */;
 			productName = OtusGithubAPI;
+		};
+		CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */;
+			productName = OtusNewsAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
