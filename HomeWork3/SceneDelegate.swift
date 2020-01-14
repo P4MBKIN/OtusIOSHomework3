@@ -34,10 +34,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //                print(list)
 //                print(error)
 //            }
-//            ArticlesAPI.everythingGet(q: "bitcoin", from: "2020-01-12", sortBy: "publishedAt", apiKey: "428cdc3ea75045248447b7f8c444d298") { list, error in
-//                print(list)
-//                print(error)
-//            }
+            ArticlesAPI.everythingGet(q: "Apple", from: "2020-01-12", sortBy: "publishedAt", apiKey: "428cdc3ea75045248447b7f8c444d298") { list, error in
+                print(list?.totalResults)
+            }
         }
     }
 

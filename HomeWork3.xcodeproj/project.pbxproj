@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41223CE2522007E479E /* BarChartRow.swift */; };
+		CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41423CE25DB007E479E /* BarChartView.swift */; };
+		CE42A41723CE2652007E479E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41623CE2652007E479E /* Helpers.swift */; };
+		CE42A41923CE2D36007E479E /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41823CE2D36007E479E /* LabelView.swift */; };
+		CE42A41C23CE3687007E479E /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41B23CE3687007E479E /* PieChartCell.swift */; };
+		CE42A41E23CE371E007E479E /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41D23CE371E007E479E /* PieChartRow.swift */; };
 		CE8609BF23CCA97D008F4FEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8609BE23CCA97D008F4FEE /* AppDelegate.swift */; };
 		CE8609C123CCA97D008F4FEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8609C023CCA97D008F4FEE /* SceneDelegate.swift */; };
 		CE8609C323CCA97D008F4FEE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8609C223CCA97D008F4FEE /* ContentView.swift */; };
@@ -15,9 +21,16 @@
 		CE8609CB23CCA97E008F4FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C923CCA97E008F4FEE /* LaunchScreen.storyboard */; };
 		CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D623CCB70F008F4FEE /* OtusGithubAPI */; };
 		CE8609DA23CCC7DE008F4FEE /* OtusNewsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */; };
+		CE8609DE23CDE7C8008F4FEE /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8609DD23CDE7C8008F4FEE /* BarChartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE42A41223CE2522007E479E /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		CE42A41423CE25DB007E479E /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		CE42A41623CE2652007E479E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		CE42A41823CE2D36007E479E /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		CE42A41B23CE3687007E479E /* PieChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		CE42A41D23CE371E007E479E /* PieChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
 		CE8609BB23CCA97D008F4FEE /* HomeWork3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8609BE23CCA97D008F4FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE8609C023CCA97D008F4FEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +39,7 @@
 		CE8609C723CCA97E008F4FEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE8609CA23CCA97E008F4FEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE8609CC23CCA97E008F4FEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8609DD23CDE7C8008F4FEE /* BarChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE42A41A23CE366C007E479E /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				CE42A41B23CE3687007E479E /* PieChartCell.swift */,
+				CE42A41D23CE371E007E479E /* PieChartRow.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
 		CE8609B223CCA97D008F4FEE = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +83,7 @@
 		CE8609BD23CCA97D008F4FEE /* HomeWork3 */ = {
 			isa = PBXGroup;
 			children = (
+				CE8609DB23CDE797008F4FEE /* SwiftUICharts */,
 				CE8609BE23CCA97D008F4FEE /* AppDelegate.swift */,
 				CE8609C023CCA97D008F4FEE /* SceneDelegate.swift */,
 				CE8609C223CCA97D008F4FEE /* ContentView.swift */,
@@ -77,6 +101,27 @@
 				CE8609C723CCA97E008F4FEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8609DB23CDE797008F4FEE /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				CE42A41A23CE366C007E479E /* PieChart */,
+				CE8609DC23CDE7A7008F4FEE /* BarChart */,
+				CE42A41623CE2652007E479E /* Helpers.swift */,
+			);
+			path = SwiftUICharts;
+			sourceTree = "<group>";
+		};
+		CE8609DC23CDE7A7008F4FEE /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				CE8609DD23CDE7C8008F4FEE /* BarChartCell.swift */,
+				CE42A41223CE2522007E479E /* BarChartRow.swift */,
+				CE42A41423CE25DB007E479E /* BarChartView.swift */,
+				CE42A41823CE2D36007E479E /* LabelView.swift */,
+			);
+			path = BarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8609DE23CDE7C8008F4FEE /* BarChartCell.swift in Sources */,
+				CE42A41723CE2652007E479E /* Helpers.swift in Sources */,
 				CE8609BF23CCA97D008F4FEE /* AppDelegate.swift in Sources */,
 				CE8609C123CCA97D008F4FEE /* SceneDelegate.swift in Sources */,
+				CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */,
+				CE42A41923CE2D36007E479E /* LabelView.swift in Sources */,
+				CE42A41E23CE371E007E479E /* PieChartRow.swift in Sources */,
 				CE8609C323CCA97D008F4FEE /* ContentView.swift in Sources */,
+				CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */,
+				CE42A41C23CE3687007E479E /* PieChartCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
