@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AC323CF33B20007D981 /* PieChartView.swift */; };
 		CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41223CE2522007E479E /* BarChartRow.swift */; };
 		CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41423CE25DB007E479E /* BarChartView.swift */; };
 		CE42A41723CE2652007E479E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41623CE2652007E479E /* Helpers.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2E5AC323CF33B20007D981 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		CE42A41223CE2522007E479E /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
 		CE42A41423CE25DB007E479E /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		CE42A41623CE2652007E479E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				CE42A41B23CE3687007E479E /* PieChartCell.swift */,
 				CE42A41D23CE371E007E479E /* PieChartRow.swift */,
+				CE2E5AC323CF33B20007D981 /* PieChartView.swift */,
 			);
 			path = PieChart;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				CE42A41723CE2652007E479E /* Helpers.swift in Sources */,
 				CE8609BF23CCA97D008F4FEE /* AppDelegate.swift in Sources */,
 				CE8609C123CCA97D008F4FEE /* SceneDelegate.swift in Sources */,
+				CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */,
 				CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */,
 				CE42A41923CE2D36007E479E /* LabelView.swift in Sources */,
 				CE42A41E23CE371E007E479E /* PieChartRow.swift in Sources */,

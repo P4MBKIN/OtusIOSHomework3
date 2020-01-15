@@ -10,7 +10,7 @@ import SwiftUI
 
 struct LabelView: View {
     @Binding var arrowOffset: CGFloat
-    @Binding var title:String
+    @Binding var title: String
     var body: some View {
         VStack{
             ArrowUp().fill(Color.white).frame(width: 20, height: 12, alignment: .center).shadow(color: Color.gray, radius: 8, x: 0, y: 0).offset(x: getArrowOffset(offset:self.arrowOffset), y: 12)

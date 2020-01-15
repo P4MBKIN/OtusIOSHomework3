@@ -29,9 +29,31 @@ public struct Colors {
     public static let GradientLowerBlue:Color = Color(hexString: "#F1F9FF")
     public static let DarkPurple:Color = Color(hexString: "#1B205E")
     public static let BorderBlue:Color = Color(hexString: "#4EBCFF")
+    public static let Transparent:Color = Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.0)
     
     static func rangomColor(_ i: Int) -> Color {
-        return Color(red: Double((i >> 16) & 0xFF), green: Double((i >> 8) & 0xFF), blue: Double(i & 0xFF), opacity: 0)
+        switch i % 10 {
+        case 0:
+            return Color(.blue)
+        case 1:
+            return Color(.cyan)
+        case 2:
+            return Color(.gray)
+        case 3:
+            return Color(.magenta)
+        case 4:
+            return Color(.red)
+        case 5:
+            return Color(.purple)
+        case 6:
+            return Color(.orange)
+        case 7:
+            return Color(.green)
+        case 8:
+            return Color(.yellow)
+        default:
+            return Color(.systemPink)
+        }
     }
 }
 
@@ -162,14 +184,17 @@ public class ChartData: ObservableObject {
 }
 
 public class TestData{
-    static public var data:ChartData = ChartData(points: [37,72,51,22,39,47,66,85,50])
-    static public var values:ChartData = ChartData(values: [("2017 Q3",220),
+    static public var data: ChartData = ChartData(points: [37,72,51,22,39,47,66,85,50])
+    static public var values: ChartData = ChartData(values: [("2017 Q3",220),
     ("2017 Q4",1550),
     ("2018 Q1",8180),
     ("2018 Q2",18440),
     ("2018 Q3",55840),
-    ("2018 Q4",63150), ("2019 Q1",50900), ("2019 Q2",77550), ("2019 Q3",79600), ("2019 Q4",92550)])
-    
+    ("2018 Q4",63150),
+    ("2019 Q1",50900),
+    ("2019 Q2",77550),
+    ("2019 Q3",79600),
+    ("2019 Q4",92550)])
 }
 
 extension Color {

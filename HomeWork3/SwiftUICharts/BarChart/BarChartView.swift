@@ -14,8 +14,7 @@ struct BarChartView: View {
     public var legend: String?
     public var style: ChartStyle
     public var dropShadow: Bool
-    public var cornerImage: Image
-    public var valueSpecifier:String
+    public var valueSpecifier: String
     
     @State private var touchLocation: CGFloat = -1.0
     @State private var showValue: Bool = false
@@ -27,13 +26,12 @@ struct BarChartView: View {
             }
         }
     }
-    public init(data:ChartData, title: String, legend: String? = nil, style: ChartStyle = Styles.barChartStyleOrangeLight, dropShadow: Bool? = true, cornerImage:Image? = Image(systemName: "waveform.path.ecg"), valueSpecifier: String? = "%.1f"){
+    public init(data: ChartData, title: String, legend: String? = nil, style: ChartStyle = Styles.barChartStyleOrangeLight, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
         self.data = data
         self.title = title
         self.legend = legend
         self.style = style
         self.dropShadow = dropShadow!
-        self.cornerImage = cornerImage!
         self.valueSpecifier = valueSpecifier!
     }
     
@@ -59,7 +57,7 @@ struct BarChartView: View {
                                 .animation(.easeOut)
                         }
                         Spacer()
-                        self.cornerImage
+                        Image(systemName: "waveform.path.ecg")
                             .imageScale(.large)
                             .foregroundColor(self.style.legendTextColor)
                     }.padding()
@@ -106,7 +104,7 @@ struct BarChartView: View {
         return min(width - 110, max(10,(self.touchLocation * width) - 50))
     }
     
-    func getCurrentValue(width: CGFloat)-> (String,Double) {
+    func getCurrentValue(width: CGFloat)-> (String, Double) {
         let index = max(0, min(self.data.points.count - 1,Int(floor((self.touchLocation * width) / (width / CGFloat(self.data.points.count))))))
         return self.data.points[index]
     }
