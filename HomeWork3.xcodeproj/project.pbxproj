@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AC323CF33B20007D981 /* PieChartView.swift */; };
+		CE2E5AC923D0845D0007D981 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */; };
+		CE2E5ACB23D085050007D981 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACA23D085050007D981 /* Legend.swift */; };
+		CE2E5ACD23D085890007D981 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACC23D085890007D981 /* Line.swift */; };
+		CE2E5ACF23D086140007D981 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACE23D086140007D981 /* LineChartView.swift */; };
 		CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41223CE2522007E479E /* BarChartRow.swift */; };
 		CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41423CE25DB007E479E /* BarChartView.swift */; };
 		CE42A41723CE2652007E479E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41623CE2652007E479E /* Helpers.swift */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		CE2E5AC323CF33B20007D981 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		CE2E5ACA23D085050007D981 /* Legend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		CE2E5ACC23D085890007D981 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		CE2E5ACE23D086140007D981 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		CE42A41223CE2522007E479E /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
 		CE42A41423CE25DB007E479E /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		CE42A41623CE2652007E479E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -57,6 +65,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2E5AC723D084410007D981 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */,
+				CE2E5ACA23D085050007D981 /* Legend.swift */,
+				CE2E5ACC23D085890007D981 /* Line.swift */,
+				CE2E5ACE23D086140007D981 /* LineChartView.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
 		CE42A41A23CE366C007E479E /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,7 @@
 		CE8609DB23CDE797008F4FEE /* SwiftUICharts */ = {
 			isa = PBXGroup;
 			children = (
+				CE2E5AC723D084410007D981 /* LineChart */,
 				CE42A41A23CE366C007E479E /* PieChart */,
 				CE8609DC23CDE7A7008F4FEE /* BarChart */,
 				CE42A41623CE2652007E479E /* Helpers.swift */,
@@ -208,12 +228,16 @@
 			files = (
 				CE8609DE23CDE7C8008F4FEE /* BarChartCell.swift in Sources */,
 				CE42A41723CE2652007E479E /* Helpers.swift in Sources */,
+				CE2E5AC923D0845D0007D981 /* IndicatorPoint.swift in Sources */,
+				CE2E5ACB23D085050007D981 /* Legend.swift in Sources */,
 				CE8609BF23CCA97D008F4FEE /* AppDelegate.swift in Sources */,
+				CE2E5ACD23D085890007D981 /* Line.swift in Sources */,
 				CE8609C123CCA97D008F4FEE /* SceneDelegate.swift in Sources */,
 				CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */,
 				CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */,
 				CE42A41923CE2D36007E479E /* LabelView.swift in Sources */,
 				CE42A41E23CE371E007E479E /* PieChartRow.swift in Sources */,
+				CE2E5ACF23D086140007D981 /* LineChartView.swift in Sources */,
 				CE8609C323CCA97D008F4FEE /* ContentView.swift in Sources */,
 				CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */,
 				CE42A41C23CE3687007E479E /* PieChartCell.swift in Sources */,
