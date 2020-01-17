@@ -28,7 +28,7 @@ struct LineChartView: View {
     }
     private var rateValue: Int
     
-    public init(data: ChartData, title: String, legend: String? = nil, style: ChartStyle = Styles.lineChartStyleOne, rateValue: Int? = 14, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
+    public init(data: ChartData, title: String, legend: String? = "Legend", style: ChartStyle = Styles.lineChartStyleOne, rateValue: Int? = 14, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
         self.data = data
         self.title = title
         self.legend = legend

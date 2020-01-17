@@ -14,15 +14,17 @@ struct PieChartView: View {
     public var legend: String?
     public var style: ChartStyle
     public var dropShadow: Bool
+    public var valueSpecifier: String
     
     @State private var selectIndex: Int = -1
 
-    public init(data: ChartData, title: String, legend: String? = nil, style: ChartStyle = Styles.pieChartStyleOne, dropShadow: Bool? = true){
+    public init(data: ChartData, title: String, legend: String? = "Legend", style: ChartStyle = Styles.pieChartStyleOne, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
         self.data = data
         self.title = title
         self.legend = legend
         self.style = style
         self.dropShadow = dropShadow!
+        self.valueSpecifier = valueSpecifier!
     }
     
     public var body: some View {
@@ -55,7 +57,7 @@ struct PieChartView: View {
                         .font(.headline)
                         .foregroundColor(.black)
                     Spacer()
-                    Text(self.selectIndex != -1 ? String(self.data.points[self.selectIndex].1) : "Value")
+                    Text(self.selectIndex != -1 ? String(format: self.valueSpecifier, self.data.points[self.selectIndex].1) : "Value")
                         .font(.headline)
                         .foregroundColor(Colors.OrangeStart)
                 }
@@ -68,6 +70,6 @@ struct PieChartView: View {
 
 struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
-        PieChartView(data: TestData.values, title: "Title", legend: "Legend")
+        PieChartView(data: TestData.values, title: "Title", legend: "Legend", valueSpecifier: ".0f")
     }
 }

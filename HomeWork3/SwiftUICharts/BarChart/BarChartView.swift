@@ -26,7 +26,7 @@ struct BarChartView: View {
             }
         }
     }
-    public init(data: ChartData, title: String, legend: String? = nil, style: ChartStyle = Styles.barChartStyleOrangeLight, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
+    public init(data: ChartData, title: String, legend: String? = "Legend", style: ChartStyle = Styles.barChartStyleOrangeLight, dropShadow: Bool? = true, valueSpecifier: String? = "%.1f"){
         self.data = data
         self.title = title
         self.legend = legend
@@ -47,7 +47,7 @@ struct BarChartView: View {
                         }else{
                             Text("\(self.currentValue, specifier: self.valueSpecifier)")
                                 .font(.headline)
-                                .foregroundColor(self.style.textColor)
+                                .foregroundColor(Colors.OrangeStart)
                         }
                         if(self.legend != nil && !self.showValue) {
                             Text(self.legend!)

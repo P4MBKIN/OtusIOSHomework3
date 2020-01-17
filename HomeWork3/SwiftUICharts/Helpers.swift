@@ -38,7 +38,7 @@ public struct Colors {
         case 1:
             return Color(.cyan)
         case 2:
-            return Color(.gray)
+            return Color(.systemPink)
         case 3:
             return Color(.magenta)
         case 4:
@@ -52,7 +52,7 @@ public struct Colors {
         case 8:
             return Color(.yellow)
         default:
-            return Color(.systemPink)
+            return Color(.gray)
         }
     }
 }

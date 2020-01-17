@@ -29,14 +29,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
+            AppState.shared.mainWindow = window
             window.makeKeyAndVisible()
-//            SearchAPI.searchReposGet(q: "tetris+language:assembly", order: Order.desc) { list, error in
-//                print(list)
-//                print(error)
-//            }
-            ArticlesAPI.everythingGet(q: "Apple", from: "2020-01-12", sortBy: "publishedAt", apiKey: "428cdc3ea75045248447b7f8c444d298") { list, error in
-                print(list?.totalResults)
-            }
+            
+            AppState.shared.mainWindow = window
+            
+            AppState.shared.secondWindow = UIWindow(windowScene: windowScene)
+            AppState.shared.secondWindow?.windowLevel = .alert + 1
+            AppState.shared.secondWindow?.rootViewController = UIHostingController(rootView: OverlayView())
+            AppState.shared.secondWindow?.makeKeyAndVisible()
         }
     }
 

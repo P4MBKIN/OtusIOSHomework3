@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AC323CF33B20007D981 /* PieChartView.swift */; };
 		CE2E5AC923D0845D0007D981 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */; };
-		CE2E5ACB23D085050007D981 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACA23D085050007D981 /* Legend.swift */; };
 		CE2E5ACD23D085890007D981 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACC23D085890007D981 /* Line.swift */; };
 		CE2E5ACF23D086140007D981 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5ACE23D086140007D981 /* LineChartView.swift */; };
+		CE2E5AD123D0AB710007D981 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AD023D0AB710007D981 /* Extensions.swift */; };
+		CE2E5ADD23D1AB270007D981 /* OtusNewsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE2E5ADC23D1AB270007D981 /* OtusNewsAPI */; };
+		CE2E5AE023D1AD6C0007D981 /* OtusGithubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE2E5ADF23D1AD6C0007D981 /* OtusGithubAPI */; };
+		CE2E5AE223D1B5180007D981 /* Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AE123D1B5180007D981 /* Histogram.swift */; };
+		CE2E5AE423D1BF320007D981 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AE323D1BF320007D981 /* OverlayView.swift */; };
+		CE2E5AE623D1CB760007D981 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5AE523D1CB760007D981 /* AppState.swift */; };
 		CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41223CE2522007E479E /* BarChartRow.swift */; };
 		CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41423CE25DB007E479E /* BarChartView.swift */; };
 		CE42A41723CE2652007E479E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42A41623CE2652007E479E /* Helpers.swift */; };
@@ -24,17 +29,18 @@
 		CE8609C523CCA97E008F4FEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C423CCA97E008F4FEE /* Assets.xcassets */; };
 		CE8609C823CCA97E008F4FEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C723CCA97E008F4FEE /* Preview Assets.xcassets */; };
 		CE8609CB23CCA97E008F4FEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8609C923CCA97E008F4FEE /* LaunchScreen.storyboard */; };
-		CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D623CCB70F008F4FEE /* OtusGithubAPI */; };
-		CE8609DA23CCC7DE008F4FEE /* OtusNewsAPI in Frameworks */ = {isa = PBXBuildFile; productRef = CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */; };
 		CE8609DE23CDE7C8008F4FEE /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8609DD23CDE7C8008F4FEE /* BarChartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2E5AC323CF33B20007D981 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
-		CE2E5ACA23D085050007D981 /* Legend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
 		CE2E5ACC23D085890007D981 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		CE2E5ACE23D086140007D981 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		CE2E5AD023D0AB710007D981 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE2E5AE123D1B5180007D981 /* Histogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
+		CE2E5AE323D1BF320007D981 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		CE2E5AE523D1CB760007D981 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CE42A41223CE2522007E479E /* BarChartRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
 		CE42A41423CE25DB007E479E /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		CE42A41623CE2652007E479E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -57,8 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8609D723CCB70F008F4FEE /* OtusGithubAPI in Frameworks */,
-				CE8609DA23CCC7DE008F4FEE /* OtusNewsAPI in Frameworks */,
+				CE2E5ADD23D1AB270007D981 /* OtusNewsAPI in Frameworks */,
+				CE2E5AE023D1AD6C0007D981 /* OtusGithubAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				CE2E5AC823D0845D0007D981 /* IndicatorPoint.swift */,
-				CE2E5ACA23D085050007D981 /* Legend.swift */,
 				CE2E5ACC23D085890007D981 /* Line.swift */,
 				CE2E5ACE23D086140007D981 /* LineChartView.swift */,
 			);
@@ -105,10 +110,14 @@
 		CE8609BD23CCA97D008F4FEE /* HomeWork3 */ = {
 			isa = PBXGroup;
 			children = (
-				CE8609DB23CDE797008F4FEE /* SwiftUICharts */,
 				CE8609BE23CCA97D008F4FEE /* AppDelegate.swift */,
+				CE2E5AE523D1CB760007D981 /* AppState.swift */,
 				CE8609C023CCA97D008F4FEE /* SceneDelegate.swift */,
 				CE8609C223CCA97D008F4FEE /* ContentView.swift */,
+				CE2E5AE323D1BF320007D981 /* OverlayView.swift */,
+				CE2E5AD023D0AB710007D981 /* Extensions.swift */,
+				CE2E5AE123D1B5180007D981 /* Histogram.swift */,
+				CE8609DB23CDE797008F4FEE /* SwiftUICharts */,
 				CE8609C423CCA97E008F4FEE /* Assets.xcassets */,
 				CE8609C923CCA97E008F4FEE /* LaunchScreen.storyboard */,
 				CE8609CC23CCA97E008F4FEE /* Info.plist */,
@@ -164,8 +173,8 @@
 			);
 			name = HomeWork3;
 			packageProductDependencies = (
-				CE8609D623CCB70F008F4FEE /* OtusGithubAPI */,
-				CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */,
+				CE2E5ADC23D1AB270007D981 /* OtusNewsAPI */,
+				CE2E5ADF23D1AD6C0007D981 /* OtusGithubAPI */,
 			);
 			productName = HomeWork3;
 			productReference = CE8609BB23CCA97D008F4FEE /* HomeWork3.app */;
@@ -196,8 +205,8 @@
 			);
 			mainGroup = CE8609B223CCA97D008F4FEE;
 			packageReferences = (
-				CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */,
-				CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */,
+				CE2E5ADB23D1AB270007D981 /* XCRemoteSwiftPackageReference "OtusNewsAPI" */,
+				CE2E5ADE23D1AD6C0007D981 /* XCRemoteSwiftPackageReference "OtusGithubAPI" */,
 			);
 			productRefGroup = CE8609BC23CCA97D008F4FEE /* Products */;
 			projectDirPath = "";
@@ -229,14 +238,17 @@
 				CE8609DE23CDE7C8008F4FEE /* BarChartCell.swift in Sources */,
 				CE42A41723CE2652007E479E /* Helpers.swift in Sources */,
 				CE2E5AC923D0845D0007D981 /* IndicatorPoint.swift in Sources */,
-				CE2E5ACB23D085050007D981 /* Legend.swift in Sources */,
+				CE2E5AE623D1CB760007D981 /* AppState.swift in Sources */,
 				CE8609BF23CCA97D008F4FEE /* AppDelegate.swift in Sources */,
 				CE2E5ACD23D085890007D981 /* Line.swift in Sources */,
 				CE8609C123CCA97D008F4FEE /* SceneDelegate.swift in Sources */,
 				CE2E5AC423CF33B20007D981 /* PieChartView.swift in Sources */,
+				CE2E5AE423D1BF320007D981 /* OverlayView.swift in Sources */,
 				CE42A41323CE2522007E479E /* BarChartRow.swift in Sources */,
+				CE2E5AE223D1B5180007D981 /* Histogram.swift in Sources */,
 				CE42A41923CE2D36007E479E /* LabelView.swift in Sources */,
 				CE42A41E23CE371E007E479E /* PieChartRow.swift in Sources */,
+				CE2E5AD123D0AB710007D981 /* Extensions.swift in Sources */,
 				CE2E5ACF23D086140007D981 /* LineChartView.swift in Sources */,
 				CE8609C323CCA97D008F4FEE /* ContentView.swift in Sources */,
 				CE42A41523CE25DB007E479E /* BarChartView.swift in Sources */,
@@ -434,34 +446,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */ = {
+		CE2E5ADB23D1AB270007D981 /* XCRemoteSwiftPackageReference "OtusNewsAPI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/P4MBKIN/OtusGithubAPI";
+			repositoryURL = "https://github.com/P4MBKIN/OtusNewsAPI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.1.0;
 			};
 		};
-		CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */ = {
+		CE2E5ADE23D1AD6C0007D981 /* XCRemoteSwiftPackageReference "OtusGithubAPI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/P4MBKIN/OtusNewsAPI";
+			repositoryURL = "https://github.com/P4MBKIN/OtusGithubAPI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CE8609D623CCB70F008F4FEE /* OtusGithubAPI */ = {
+		CE2E5ADC23D1AB270007D981 /* OtusNewsAPI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE8609D523CCB70F008F4FEE /* XCRemoteSwiftPackageReference "OtusGithubAPI" */;
-			productName = OtusGithubAPI;
-		};
-		CE8609D923CCC7DE008F4FEE /* OtusNewsAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE8609D823CCC7DE008F4FEE /* XCRemoteSwiftPackageReference "OtusNewsAPI" */;
+			package = CE2E5ADB23D1AB270007D981 /* XCRemoteSwiftPackageReference "OtusNewsAPI" */;
 			productName = OtusNewsAPI;
+		};
+		CE2E5ADF23D1AD6C0007D981 /* OtusGithubAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE2E5ADE23D1AD6C0007D981 /* XCRemoteSwiftPackageReference "OtusGithubAPI" */;
+			productName = OtusGithubAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
